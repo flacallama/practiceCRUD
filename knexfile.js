@@ -1,11 +1,13 @@
-// Update with your config settings.
-
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'pg',
     connection: {
-      filename: './dev.sqlite3'
+      database: 'practiceCRUD',
+      host: '127.0.0.1'
+    },
+    seeds: {
+      directory: './seeds'
     }
   },
 
